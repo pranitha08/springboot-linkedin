@@ -1,6 +1,4 @@
-package com.example.demo1.Services;
-
-
+package com.example.demo1.Service;
 import com.example.demo1.Repository.LoginRepository;
 import com.example.demo1.Repository.ProfileRepository;
 import com.example.demo1.entity.Login;
@@ -11,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class ProfileServices {
+public class ProfileService {
     @Autowired
     ProfileRepository profileRepository;
     @Autowired
@@ -27,7 +25,6 @@ public class ProfileServices {
     }
 
     public Profile addProfile(Integer id,Profile profile) {
-
         Login login=loginRepository.findById(id).get();
         profile.setLogin_id(login);
         return profileRepository.save(profile);

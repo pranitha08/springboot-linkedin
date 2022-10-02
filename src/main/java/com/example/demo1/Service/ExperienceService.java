@@ -1,4 +1,4 @@
-package com.example.demo1.Services;
+package com.example.demo1.Service;
 
 import com.example.demo1.Repository.ExperienceRepository;
 
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ExperienceServices {
+public class ExperienceService {
 
     @Autowired
     ExperienceRepository experienceRepository;

@@ -1,4 +1,4 @@
-package com.example.demo1.Services;
+package com.example.demo1.Service;
 import com.example.demo1.Repository.EducationRepository;
 import com.example.demo1.Repository.ProfileRepository;
 import com.example.demo1.entity.*;
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class EducationServices {
+public class EducationService {
     
     @Autowired
     EducationRepository educationRepository;

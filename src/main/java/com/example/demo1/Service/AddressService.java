@@ -1,4 +1,4 @@
-package com.example.demo1.Services;
+package com.example.demo1.Service;
 
 import com.example.demo1.Repository.AddressRepository;
 import com.example.demo1.Repository.ProfileRepository;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class AddressServices {
+public class AddressService {
 
     @Autowired
     AddressRepository addressRepository;

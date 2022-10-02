@@ -1,4 +1,4 @@
-package com.example.demo1.Services;
+package com.example.demo1.Service;
 
 import com.example.demo1.Repository.LoginRepository;
 import com.example.demo1.entity.Login;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class LoginServices {
+public class LoginService {
     @Autowired
     LoginRepository loginRepository;
 

@@ -33,9 +33,9 @@ public class ProfileService {
     public Profile UpdateProfile(Integer id, Profile profile) {
         Profile oldProfile=profileRepository.findById(id).orElse(null);
         if(oldProfile!=null){
-            oldProfile.setFirst_name(profile.getFirst_name());
-            oldProfile.setLast_name(profile.getLast_name());
-            oldProfile.setContact_no(profile.getContact_no());
+            oldProfile.setFirstName(profile.getFirstName());
+            oldProfile.setLastName(profile.getLastName());
+            oldProfile.setContactNo(profile.getContactNo());
             oldProfile.setDob(profile.getDob());
             oldProfile.setDescription(profile.getDescription());
             return profileRepository.save(oldProfile);

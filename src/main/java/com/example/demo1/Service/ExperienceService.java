@@ -38,11 +38,11 @@ public class ExperienceService {
     public Experience updateAddress(Integer id, Experience experience) {
         Experience oldExperience=experienceRepository.findById(id).orElse(null);
         if(oldExperience!=null){
-            oldExperience.setCompany_name(experience.getCompany_name());
+            oldExperience.setCompanyName(experience.getCompanyName());
             oldExperience.setLocation(experience.getLocation());
             oldExperience.setPosition(experience.getPosition());
-            oldExperience.setStart_date(experience.getStart_date());
-            oldExperience.setEnd_date(experience.getEnd_date());
+            oldExperience.setStartDate(experience.getStartDate());
+            oldExperience.setEndDate(experience.getEndDate());
             oldExperience.setDescription(experience.getDescription());
             return experienceRepository.save(oldExperience);
         }

@@ -15,5 +15,5 @@ public class Skills {
     @Column(name="id",nullable = false)
     private Integer id;
 
-    private String skill_name;
+    private String skillName;
 }

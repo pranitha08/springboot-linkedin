@@ -13,33 +13,17 @@ public class LoginController {
 
     @PostMapping("/register")
     public Login registerUser(@RequestBody Login login) throws Exception {
-        String tempEmailId = login.getEmail();
-        if (tempEmailId != null) {
-            Login loginObj = loginService.fetchUserByEmail(tempEmailId);
-            if (loginObj != null) {
-                throw new Exception("User With " + tempEmailId + " is already exist");
-            }
-        }
         return loginService.registerUser(login);
     }
 
     @PostMapping("/login")
     public Login loginUser(@RequestBody Login login) throws Exception {
-        String tempEmailId = login.getEmail();
-        String tempPassword = login.getPassword();
-        Login loginObj = null;
-        if (tempEmailId != null && tempPassword != null) {
-            loginObj = loginService.fetchUserByEmailAndPassWord(tempEmailId, tempPassword);
-        }
-        if (loginObj == null) {
-            throw new Exception("Bad Credentials");
-        }
-        return loginObj;
+       return loginService.loginUser(login);
     }
 
     @GetMapping(value = "/{id}")
-    public Login getById(@PathVariable Integer id) {
-        return loginService.getById(id);
+    public Login getUser(@PathVariable Integer id) {
+        return loginService.getUser(id);
     }
 
     @DeleteMapping("/{id}")

@@ -13,13 +13,13 @@ public class Profile {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String first_name;
+    private String firstName;
 
-    private String last_name;
+    private String lastName;
 
     private String dob;
 
-    private String contact_no;
+    private String contactNo;
 
     private String description;
 

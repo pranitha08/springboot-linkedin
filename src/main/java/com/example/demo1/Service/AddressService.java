@@ -40,7 +40,7 @@ public class AddressService {
             oldAddress.setCity(address.getCity());
             oldAddress.setState(address.getState());
             oldAddress.setCountry(address.getCountry());
-            oldAddress.setPin_code(address.getPin_code());
+            oldAddress.setPinCode(address.getPinCode());
             return addressRepository.save(oldAddress);
         }
         return null;

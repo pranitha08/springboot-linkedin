@@ -21,7 +21,7 @@ public class Education {
     private Integer grade;
     private String field;
     private String description;
-    private String start_date;
-    private String end_date;
+    private String startDate;
+    private String endDate;
 
 }

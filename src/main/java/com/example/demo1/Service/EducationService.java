@@ -35,8 +35,8 @@ public class EducationService {
             oldEducation.setDegree(education.getDegree());
             oldEducation.setGrade(education.getGrade());
             oldEducation.setField((education.getField()));
-            oldEducation.setStart_date(education.getStart_date());
-            oldEducation.setEnd_date(education.getEnd_date());
+            oldEducation.setStartDate(education.getStartDate());
+            oldEducation.setEndDate(education.getEndDate());
             return educationRepository.save(oldEducation);
         }
         return null;

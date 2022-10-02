@@ -11,13 +11,13 @@ import javax.persistence.*;
 @Setter
 public class Experience{
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String company_name;
+    private String companyName;
     private String position;
-    private String start_date;
-    private String end_date;
+    private String startDate;
+    private String endDate;
     private String description;
     private String location;
 
